@@ -1153,7 +1153,7 @@ class HTMLReportCreator(ReportCreator):
 		for tag in tags_sorted_by_date_desc:
 			authorinfo = []
 			self.authors_by_commits = getkeyssortedbyvalues(data.tags[tag]['authors'])
-			for i in reversed(self.authors_by_commits):
+			for i in reversed(list(self.authors_by_commits)):
 				authorinfo.append('%s (%d)' % (i, data.tags[tag]['authors'][i]))
 			f.write('<tr><td>%s</td><td>%s</td><td>%d</td><td>%s</td></tr>' % (tag, data.tags[tag]['date'], data.tags[tag]['commits'], ', '.join(authorinfo)))
 		f.write('</table>')
