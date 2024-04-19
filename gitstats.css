@@ -3,7 +3,7 @@
  */
 body {
 	color: black;
-	background-color: #dfd;
+	background-color: rgb(240, 240, 240);
 }
 
 dt {
@@ -127,7 +127,7 @@ h1 {
 }
 
 h2 {
-	background-color: #564;
+	background-color: #4591E7;
 	border: 1px solid black;
 	padding-left: 0.5em;
 	padding-right: 0.5em;
